@@ -1,0 +1,83 @@
+/* https://flatuicolors.com/palette/nl */
+
+*{
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;  
+  background-color: #cfcfcf;  
+}
+ 
+.flex-container {
+  display: flex;   
+  flex-direction: column;       
+  height: 100%;       
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC312;      
+}
+.flex-container > div {      
+  width: 600px;
+  height: 600px;
+  margin: 5px;
+  text-align: center;      
+}    
+
+.flex-container > div #screen {      
+  border: 1px dashed #F79F1F;
+  box-shadow: 5px 5px 12px #EE5A24;
+  border-radius: 10px;
+  /* Não deixa os pixel pixelado */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  /* Determina o tamanho do canvas */
+  /* width: 100%; */
+  height: 100%;
+  background-color: #fff;
+}
+#title {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  font-size: 2rem;
+  background-color: #FFC312;        
+  color: #009432;
+  text-shadow: 2px 2px #006266;      
+}
+
+.flex-container .panel {      
+  margin-top: 10px;
+  background-color: #FFC312;         
+  height: 50px;      
+}
+
+.flex-container .panel .row-panel, .row-data {
+  display: flex;
+  flex-direction: row;           
+  color: #009432;        
+}
+
+.flex-container .panel .row-panel > div, .row-data > div {            
+  text-align: center;      
+  width: 25%;
+}
+
+.flex-container .panel .row-panel > div{            
+  color: #006266;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.flex-container .panel .row-data > div {      
+  font-size: 20px;
+  text-shadow: 2px 2px #006266;            
+}
